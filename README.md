@@ -14,7 +14,7 @@ I used PostgreSQL, a relational database system, and pgAdmin to develop an emplo
 data relationships among the six CSV files. From there I prepared am entity relationship diagram (ERD), a type of flowchart that highlights different data 
 tables and their relationship to each other (see below). I used the website QuickDBD to prepare the ERD.
 
-	![employeeDB.png]( https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/916baf9b6003d229e7cf1b036158be4df1a3b62c/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/EmployeeDB.png)
+	![employeeDB.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/916baf9b6003d229e7cf1b036158be4df1a3b62c/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/EmployeeDB.png)
     
 Using the ERD, I used PostgreSQL and pgAdmin to create a database and then tables. I then wrote and executed SQL code to join the tables, import the CSV files 
 into the database, and then wrote queries to prepare the required reports. </p>
@@ -28,22 +28,25 @@ developing queries for a database is an iterative process whereby it may take mu
 ## Results: 
 I developed a series of tables and related csv files using SQL scripts. The scripts can be found in the “Employee_Database_Challenge.sql” file. The below image 
 provides a sample of the code.
-![pgAdmin_SQL_code_employeeDB_queries.png]( https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/3db717bcb1026901e52854cd93eb42c837e07202/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/pgAdmin_SQL_code_employeeDB_queries.png)
+![pgAdmin_SQL_code_employeeDB_queries.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/3db717bcb1026901e52854cd93eb42c837e07202/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/pgAdmin_SQL_code_employeeDB_queries.png)
 
 *	Current_emp table and csv file provide data that modified the retirement_info table that not only meet the criteria for retirement eligibility, i.e. born 
 between 1952 and 1955 and hired between 1985 and 1988, but also restricts to just current employees.  I also added the employee number and the to_date that 
 confirms each as an active employee. This query produced a list of 33,118 current employees that meet the criteria for retirement eligibility. This reduced the 
 count of employees that meet the retirement eligibility from the initial count of 41,380 in the retirement_info table down to 33,118.
-	![Current_emp.png]( https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Current_emp.png)
+
+	![Current_emp.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Current_emp.png)
 
 *	Retirement_titles table and csv file provide data of those employees who meet the two criteria for retirement eligibility, and lists each employee’s 
 	respective titles, both current and prior titles in the company. The list does contain both current and non-current employees.
 	
-*	Unique_titles table and csv provide data that modified the retirement_titles query to restrict to only current employees and provide their current titles.  
-	![Unique_titles.png]( https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Unique_titles.png)
+*	Unique_titles table and csv provide data that modified the retirement_titles query to restrict to only current employees and provide their current titles. 
+ 
+	![Unique_titles.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Unique_titles.png)
 
 *	Retiring_titles table and csv provide summary data of the count of current employees who are retirement eligible, grouped by title. See image below.
-	![Retiring_titles.png]( https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Retiring_titles.png)
+
+	![Retiring_titles.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/0ecdac2c9dfc0e2a4da24d6f554cf4298daa527f/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/Retiring_titles.png)
 
 *	Mentorship_eligibility table and csv provide data of current employees who are eligible for the mentorship program, i.e. the employee was born in 1965. 
 	This provides a list of 1,549 mentorship eligible current employees. </p>
