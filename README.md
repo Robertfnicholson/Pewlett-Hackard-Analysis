@@ -14,7 +14,7 @@ I used PostgreSQL, a relational database system, and pgAdmin to develop an emplo
 data relationships among the six CSV files. From there I prepared am entity relationship diagram (ERD), a type of flowchart that highlights different data 
 tables and their relationship to each other (see below). I used the website QuickDBD to prepare the ERD.
 
-	![employeeDB.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/916baf9b6003d229e7cf1b036158be4df1a3b62c/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/EmployeeDB.png)
+	![EmployeeDB.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/e4214145795142ec21b59f17f3c9028dfdf98230/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/EmployeeDB.png)
     
 Using the ERD, I used PostgreSQL and pgAdmin to create a database and then tables. I then wrote and executed SQL code to join the tables, import the CSV files 
 into the database, and then wrote queries to prepare the required reports. </p>
