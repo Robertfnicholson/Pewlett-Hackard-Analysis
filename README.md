@@ -17,7 +17,7 @@ tables and their relationship to each other (see below). I used the website Quic
 ![EmployeeDB.png](https://github.com/Robertfnicholson/Pewlett-Hackard-Analysis/blob/3034746ee4535dbf9edf72a136024cd004b80037/Analysis_Projects_Folder/Pewlett-Hackard-Analysis_Folder/EmployeeDB.png)
     
 Using the ERD, I used PostgreSQL and pgAdmin to create a database and then tables. I then wrote and executed SQL code to join the tables, import the CSV files 
-into the database, and then wrote queries to prepare the required reports. </p>
+into the database, and then wrote queries to prepare the required reports. My SQL code can be found in "Employee_Database_Challenge.sql." </p>
 
 ## Challenges
 I experienced challenges in learning pgAdmin. This included opening and using an existing SQL file. I learned the restore function that allows this. I also 
